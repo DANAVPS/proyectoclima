@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"> <!-- Codificación de caracteres en español -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajuste para dispositivos móviles -->
+    <title>Conexión API Clima</title> <!-- Título de la pestaña -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="css/tailwind-all.min.css">
+</head>
+
+<body>
+
+    <!-- Contenedor principal -->
+    <div class="container mx-auto">
+
+    <!-- Título de la página -->
+    <h1 id="titulo" class="text-4xl mt-5 text-white font-uppercase text-center">
+    CONEXIÓN API CLIMA
+    </h1>
+
+    <!-- Contenedor para el contenido principal -->
+    <div class="max-w-lg mx-auto">
+    <div class="p-6 mt-10">
+        
+        <!-- Mensaje de aviso -->
+        <div id="resultado">
+            <p class="text-center text-white mt-6">¡Aviso importante! Agregar la ciudad</p>
+        </div>
+
+        <!-- Formulario para ingresar datos -->
+        <form id="Formulario" name="Formulario" class="mt-10" action="#" method="POST">
+
+        <!-- Campo de entrada para la ciudad -->
+        <div class="mt-5 text-black">
+            <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad" class="w-full p-2 rounded">
+        </div>
+
+        <!-- Selector de país -->
+        <div class="mt-5">
+            <select class="block appearance-none w-full bg-gray-200 border-gray-300 rounded p-2 text-black" id="pais">
+                <option disabled selected value="">--Seleccione--</option>
+                <option value="AR">Argentina</option>
+                <option value="AU">Australia</option>
+                <option value="BR">Brasil</option>
+                <option value="CA">Canadá</option>
+                <option value="CL">Chile</option>
+                <option value="CN">China</option>
+                <option value="CO">Colombia</option>
+                <option value="CR">Costa Rica</option>
+                <option value="CU">Cuba</option>
+                <option value="DO">República Dominicana</option>
+                <option value="EC">Ecuador</option>
+                <option value="EG">Egipto</option>
+                <option value="ES">España</option>
+                <option value="FR">Francia</option>
+                <option value="DE">Alemania</option>
+                <option value="GT">Guatemala</option>
+                <option value="HN">Honduras</option>
+                <option value="IN">India</option>
+                <option value="IT">Italia</option>
+                <option value="JP">Japón</option>
+                <option value="MX">México</option>
+                <option value="NG">Nigeria</option>
+                <option value="NI">Nicaragua</option>
+                <option value="PA">Panamá</option>
+                <option value="PY">Paraguay</option>
+                <option value="PE">Perú</option>
+                <option value="RU">Rusia</option>
+                <option value="ZA">Sudáfrica</option>
+                <option value="US">Estados Unidos</option>
+                <option value="VE">Venezuela</option>
+            </select>
+        </div>
+        
+
+        <!-- Botón para buscar la temperatura -->
+        <button type="submit" class="bg-green-600 text-white p-2 rounded mt-5 w-full">
+            BUSCAR TEMPERATURA
+        </button>
+
+        </form>
+    </div>
+    </div>
+
+</div>
+
+<!-- Archivo de JavaScript para la funcionalidad -->
+<script src="Js/app2.js"></script>
+
+</body>
+</html>

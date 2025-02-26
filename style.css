@@ -1,0 +1,62 @@
+/* Estilos generales de la página */
+body {
+  background-color: #003087; /* Fondo azul oscuro */
+  color: white; /* Texto en color blanco */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+  text-align: center; /* Centrar el contenido */
+  margin: 0; /* Eliminar márgenes predeterminados */
+  padding: 0; /* Eliminar relleno predeterminado */
+  display: flex; /* Usar flexbox */
+  flex-direction: column; /* Organizar elementos en columna */
+  align-items: center; /* Centrar elementos horizontalmente */
+  justify-content: center; /* Centrar elementos verticalmente */
+  height: 100vh; /* Ocupar toda la altura de la pantalla */
+}
+
+/* Estilo del contenedor principal */
+.container {
+  background: rgba(25, 25, 25, 0.2); /* Fondo semi-transparente */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  width: 500px; /* Ancho fijo */
+}
+
+/* Estilo del título */
+h1 {
+  margin-top: 0; /* Eliminar margen superior */
+  font-size: 2em; /* Tamaño del texto */
+  color: black;
+}
+
+/* Estilo de los párrafos */
+p {
+  font-size: 1.2em; /* Tamaño del texto */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Campos de entrada y selección */
+input, select, button {
+  width: 90%; /* Tamaño uniforme */
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 10px auto; /* Espaciado uniforme */
+  text-align: center;
+  box-sizing: border-box; /* Asegura que el padding y el border estén incluidos en el ancho total */
+}
+
+/* Estilos específicos del botón */
+button {
+  background-color: #008000; /* Verde */
+  color: white; /* Texto en blanco */
+  font-weight: bold; /* Texto en negrita */
+  cursor: pointer; /* Cambiar cursor al pasar */
+}
+
+/* Efecto hover en el botón */
+button:hover {
+  background-color: #006400; /* Verde oscuro */
+}
